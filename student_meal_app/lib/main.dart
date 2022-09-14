@@ -11,7 +11,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Student Meal System',
+      theme: ThemeData(
+        primarySwatch: Colors.grey,
+        fontFamily: 'Raleway',
+        // textTheme: ThemeData.light().textTheme.copyWith(
+        //   bodyText1: TextStyle(color: Color.fromARGB(20, 51, 51, 1)),
+        //   bodyText2: TextStyle(color: Color.fromARGB(20, 51, 51, 1)),
+        //   titleMedium: TextStyle(
+        //     fontSize: 24,
+        //     fontFamily: 'RobotoCondensed',
+        //   ),
+        // ),
+      ),
       home: CategoriesScreen(),
     );
   }
