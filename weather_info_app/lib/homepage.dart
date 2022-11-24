@@ -303,7 +303,7 @@ class _HomePageState extends State<HomePage> {
                     width: 100,
                     child: Image.asset('assets/Images/sunrise.png'),
                   ),
-                  Text(riseTime),
+                  Text("${riseTime} AM"),
                 ],
               ),
               Column(
@@ -312,7 +312,7 @@ class _HomePageState extends State<HomePage> {
                     width: 100,
                     child: Image.asset('assets/Images/sunsets.png'),
                   ),
-                  Text(setTime),
+                  Text("${setTime} PM"),
                 ],
               ),
             ],
@@ -327,6 +327,6 @@ String getClockInUtcPlus3Hours(String timeSinceEpochInSec) {
   int timeSinceEpochInSec2 = int.parse(timeSinceEpochInSec);
   final time = DateTime.fromMillisecondsSinceEpoch(timeSinceEpochInSec2 * 1000,
           isUtc: true)
-      .add(const Duration(hours: 3));
+      .add(const Duration(hours: 6));
   return '${time.hour}:${time.second}';
 }
