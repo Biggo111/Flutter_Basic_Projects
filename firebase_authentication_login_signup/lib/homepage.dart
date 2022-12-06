@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
+import 'colors.dart';
+import 'widgets.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -149,9 +154,9 @@ class _HomePageState extends State<HomePage> {
                         child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.green,
-                            elevation: 2 //Button Background Color
-                          ),
+                              backgroundColor: Colors.green,
+                              elevation: 2 //Button Background Color
+                              ),
                           child: const Text("SIGN IN"),
                         ),
                       ),
@@ -166,7 +171,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       const Text("Don't have any account?"),
                       TextButton(
-                        onPressed: (){}, 
+                        onPressed: () {},
                         child: const Text(
                           "Create Account",
                           style: TextStyle(
@@ -184,7 +189,7 @@ class _HomePageState extends State<HomePage> {
                         left: 20,
                       ),
                       child: SizedBox(
-                        width: MediaQuery.of(context).size.width/2.7,
+                        width: MediaQuery.of(context).size.width / 2.7,
                         child: const Expanded(
                           child: Divider(
                             height: 10,
@@ -196,12 +201,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const Text(
                       " OR ",
-                      style: TextStyle(
-                        fontSize: 15
-                      ),
+                      style: TextStyle(fontSize: 15),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width/2.7,
+                      width: MediaQuery.of(context).size.width / 2.7,
                       child: const Expanded(
                         child: Divider(
                           height: 10,
@@ -212,6 +215,67 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
+                // Container(
+                //   //width: MediaQuery.of(context).size.width/3,
+                //   margin: const EdgeInsets.all(5),
+                //   padding: const EdgeInsets.symmetric(
+                //     vertical: 5,
+                //     horizontal: 15,
+                //   ),
+                //   decoration: BoxDecoration(
+                //     color: Colors.white,
+                //     borderRadius: BorderRadius.circular(30),
+                //   ),
+                //   child: Row(
+                //     children: [
+                //       const Icon(
+                //         Icons.emoji_emotions_outlined,
+                //         color: Colors.black38,
+                //         size: 25,
+                //       ),
+                //       const SizedBox(width: 10,),
+                //       SizedBox(
+                //         width: MediaQuery.of(context).size.width/3,
+                //         child: TextFormField(
+                //           style: const TextStyle(
+                //             fontSize: 19,
+                //           ),
+                //           decoration: const InputDecoration(
+                //             hintText: "Message",
+                //             border: InputBorder.none,
+                //           ),
+                //         ),
+                //       ),
+                //       const SizedBox(
+                //         width: 80,
+                //       ),
+                //       const Icon(
+                //         Icons.attachment_outlined,
+                //         color: Colors.black38,
+                //         size: 25,
+                //       ),
+                //       const SizedBox(
+                //         width: 15,
+                //       ),
+                //       const Icon(
+                //         Icons.camera_alt,
+                //         color: Colors.black38,
+                //         size: 25,
+                //       ),
+                //     ],
+                //   ),
+                // ),
+                const SizedBox(
+                  height: 10,
+                ),
+                CustomWidgets.socialButtonRect('Login with Google', googleColor,
+                    FontAwesomeIcons.googlePlusG, onTap: () {
+                  Fluttertoast.showToast(msg: 'I am google');
+                }),
+                CustomWidgets.socialButtonRect('Login with Facebook',
+                    facebookColor, FontAwesomeIcons.facebookF, onTap: () {
+                  Fluttertoast.showToast(msg: 'I am facebook');
+                }),
               ],
             ),
           ),
