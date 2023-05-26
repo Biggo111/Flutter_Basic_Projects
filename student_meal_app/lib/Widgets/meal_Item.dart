@@ -11,17 +11,17 @@ class MealItem extends StatelessWidget {
   
   MealItem({required this.title, required this.imageUrl, required this.duration, required this.complexity, required this.affordability});
 
-  String get complexityText {
-    if(complexity==Complexity.Simple){
-      return 'Simple';
-    }
-    else if(complexity==Complexity.Challenging){
-      return 'Challenging';
-    }
-    else if(complexity==Complexity.Hard){
-      return 'Hard';
-    }
-  }
+  // String get complexityText {
+  //   if(complexity==Complexity.Simple){
+  //     return 'Simple';
+  //   }
+  //   else if(complexity==Complexity.Challenging){
+  //     return 'Challenging';
+  //   }
+  //   else if(complexity==Complexity.Hard){
+  //     return 'Hard';
+  //   }
+  // }
   void selectMeal(){
 
   }
@@ -86,7 +86,7 @@ class MealItem extends StatelessWidget {
                     children: [
                       Icon(Icons.work,),
                       SizedBox(width: 6,),
-                      Text(complexityText),
+                      //Text(complexityText),
                     ],
                   ),
                 ],
