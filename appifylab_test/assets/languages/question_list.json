@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Which of the following expressions will return the integer part of division result?",
+        "explanation": "Returns integer part of division result",
+        "mark": 1,
+        "quiz_type": "SINGLE",
+        "next_button": true,
+        "options": [
+            {
+                "value": "Option A",
+                "is_right": true
+            },
+            {
+                "value": "Option B",
+                "is_right": false
+            },
+            {
+                "value": "Option C",
+                "is_right": false
+            }
+        ]
+    },
+    {
+        "title": "Which of the following expressions will return the integer part of division          result?",
+        "explanation": "Returns integer part of division result",
+        "mark": 1,
+        "quiz_type": "MULTIPLE",
+        "next_button": true,
+        "options": [
+            {
+                "value": "A",
+                "is_right": true
+            },
+            {
+                "value": "B",
+                "is_right": true
+            },
+            {
+                "value": "C",
+                "is_right": false
+            }
+        ]
+    },
+    {
+        "title": "Which of the following expressions will return the integer part of division result?",
+        "explanation": "Returns integer part of division result",
+        "mark": 1,
+        "quiz_type": "SINGLE",
+        "next_button": false,
+        "options": [
+            {
+                "value": "AAAA",
+                "is_right": false
+            },
+            {
+                "value": "BBBB",
+                "is_right": true
+            },
+            {
+                "value": "CCCC",
+                "is_right": false
+            }
+        ]
+    }
+]
